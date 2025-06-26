@@ -101,15 +101,25 @@ footer {
 }
 
 /*タブレット*/
-@media screen and (max-width:768px){
+@media screen and (max-width:820px){
+
+    header {
+        height: 360px;
+        padding: 50px;
+    }
     header h1 {
-        padding: 60px 20px 10px 20px;
-        font-size: 36px;
+        padding: 40 20px 10px 20px;
+        font-size: 40px;
     }
 
     header p{
         padding: 0 20px 10px 20px;
-        font-size: 16px;
+        font-size: 13px;
+    }
+
+    header::before{
+        background-size: cover;
+        background-position: center;
     }
 
     .card-container{
@@ -139,7 +149,7 @@ footer {
 @media screen and (max-width:480px) {
 
     header {
-        height: 250px;
+        height: 230px;
     }
     
     header::before{
