@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: sans-serif;
   margin: 0;
@@ -45,6 +48,15 @@ section h2{
     text-align: center;
 }
 
+.text-url a {
+  display: block;
+  margin: 8px 0;  /* 縦の間隔も調整 */
+  color: #007acc;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -70,12 +82,63 @@ section h2{
   object-fit: cover;
 }
 
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.work-card {
+    width: 300px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact li {
+    margin: 10px;
+    font-size: 16px;
+}
 footer {
   background: #333;
   color: white;
   text-align: center;
   padding: 20px;
 }
+.about {
+    text-align: center;
+}
+.about ul {
+    list-style: none;
+}
+
+
 
 .footer-content{
     display: flex;
@@ -104,7 +167,7 @@ footer {
 @media screen and (max-width:820px){
 
     header {
-        height: 360px;
+        height: auto;
         padding: 50px;
     }
     header h1 {
@@ -149,7 +212,7 @@ footer {
 @media screen and (max-width:480px) {
 
     header {
-        height: 200px;
+        height: auto;
     }
     
     header::before{
