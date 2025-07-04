@@ -133,6 +133,9 @@ footer {
 }
 .about {
     text-align: center;
+    background-color: antiquewhite;
+    margin: 3rem 5rem;
+    padding: 2rem;
 }
 .about ul {
     list-style: none;
